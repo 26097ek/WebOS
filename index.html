@@ -1,8 +1,109 @@
 <!DOCTYPE html>
 <html>
+  <head>
+
+    <title>Cricket</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/svg" href="CricketW.svg">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
 
   <body>
-    <p>hello world!</p>
+    <!--Top Bar-->
+    <div id="top" style="position: absolute; width: 100vw; display: flex; justify-content: space-between; background-color: rgba(30, 24, 24, 0.9); color: white; margin: 0; ">
+      <p style="margin-left: 16px;" id="welcomeopen">MyOS</p>
+      <p id="time" style="margin-right: 16px;">Error With Time</p>
+    </div>
+    
+    <!--Apps-->
+    <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+      <div class="app" id="notesopen">
+        <img src="./notes.png" class="icon" />
+        <p>Notes</p>
+      </div>
+      
+      <div class="app" id="terminalopen">
+        <img src="./terminal.png" class="icon" />
+        <p>Terminal</p>
+      </div>
+<!--
+      <div class="app" id="browseropen">
+        <img src="./browser.png" class="icon" />
+        <p>Browser</p>
+      </div>
+    -->
+    </div>
+
+    <!--Windows-->
+    <div id="welcome" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <div id="welcomeheader" class="windowheader">
+        <p class="closeButton" id="welcomeclose"></p>
+        <p style="margin: 5px;">Welcome</p>
+      </div>
+      <div class="content">
+        <h1>Welcome to Cricket, the #1 Operating System With Definitely No Lore</h1>
+      </div>
+    </div>
+
+    <div id="notes" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">
+      <div id="notesheader" class="windowheader">
+        <p class="closeButton" id="notesclose"></p>
+        <p style="margin: 5px;">Notes</p>
+      </div>
+      <div class="content">
+        <button type="button" id="notesnamesubmit">New File</button>
+        <button type="file" id="notesOpenFile">Open File</button>
+        <button type="button" id="notesSave" >Save File As</button>
+        <button type="button" id="notesInfo" >About Notes</button>
+        <input maxlength="50" id="notesFileName" placeholder="File Name Here...">
+        <textarea id="notesInput" placeholder="Start Typing here..." class="editor"  rows="25" style="overflow: auto; resize:none; field-sizing: content; min-height: 5lh; max-height: 25lh;" spellcheck="false"></textarea>
+      </div>
+    </div>
+
+    <div id="terminal" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; font-family: 'Google Sans Code';">
+      <div id="terminalheader" class="windowheader">
+        <p class="closeButton" id="terminalclose"></p>
+        <p style="margin: 5px; font-family: 'Noto Sans';">Terminal</p>
+      </div>
+        <p id="terminalContent" spellcheck="false" class="terminalStyle">user@cricket~/$<input class="terminalStyle debug" id="terminalInput"></p>
+    </div>
+<!--
+    <div id="browser" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;;">
+      <div id="browserheader" class="windowheader">
+        <p class="closeButton" id="browserclose"></p>
+        <p style="margin: 5px; font-family: 'Noto Sans';">Browser</p>
+      </div>
+      <div class="content">
+        <p>Content</p>
+      </div>
+    </div>
+  -->
+<!-- Template Window:
+    <div id="template" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;;">
+      <div id="templateheader" class="windowheader">
+        <p class="closeButton" id="templateclose"></p>
+        <p style="margin: 5px; font-family: 'Noto Sans';">Template</p>
+      </div>
+      <div class="content">
+        <p>Content</p>
+      </div>
+    </div>
+-->
+
+    <!--NoJS-->
+    <noscript><p style="color:white;">Please Enable Javascript for This Site To Work!</p></noscript>
+    <!--JS-->
+    <script src="script.js"></script>
+
   </body>
 
 </html>
