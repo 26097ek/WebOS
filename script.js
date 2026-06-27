@@ -246,6 +246,9 @@ function getResponse (command) {
 }
 
 
+function getPage() {
+  if (document.querySelector("#browserURL").value.replace(/^(?:https?:\/\/)?/i, "https://") != "https://26097ek.github.io/WebOS/") document.querySelector("#browserContent").src = document.querySelector("#browserURL").value.replace(/^(?:https?:\/\/)?/i, "https://");
+}
 
 //Top Bar
 const topBar = document.querySelector("#top");
@@ -276,7 +279,7 @@ let selectedIcon = undefined;
 initializeWindow("notes");
 initializeWindow("welcome");
 initializeWindow("terminal");
-initializeWindow("Browser")
+initializeWindow("browser")
 
 welcomeScreenOpen.addEventListener("click", () => {openWindow(welcomeScreen)})
 createFileButton.addEventListener("click", createFile);

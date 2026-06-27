@@ -35,12 +35,12 @@
         <img src="./terminal.png" class="icon" />
         <p>Terminal</p>
       </div>
-<!--
+
       <div class="app" id="browseropen">
         <img src="./browser.png" class="icon" />
         <p>Browser</p>
       </div>
-    -->
+
     </div>
 
     <!--Windows-->
@@ -76,17 +76,18 @@
       </div>
         <p id="terminalContent" spellcheck="false" class="terminalStyle">user@cricket~/$<input class="terminalStyle debug" id="terminalInput"></p>
     </div>
-<!--
-    <div id="browser" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;;">
+
+    <div id="browser" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; width: 820px;">
       <div id="browserheader" class="windowheader">
         <p class="closeButton" id="browserclose"></p>
         <p style="margin: 5px; font-family: 'Noto Sans';">Browser</p>
       </div>
       <div class="content">
-        <p>Content</p>
+        <input id="browserURL" placeholder="Enter URL here"><button type="button" onclick="getPage()">Go!</button>
+        <iframe id="browserContent" src="about:blank" style="width: 800px;height: 450px;"></iframe>
       </div>
     </div>
-  -->
+
 <!-- Template Window:
     <div id="template" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;;">
       <div id="templateheader" class="windowheader">
