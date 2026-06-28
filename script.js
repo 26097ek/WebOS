@@ -276,10 +276,8 @@ const terminalText = document.querySelector("#terminalContent")
 let biggestIndex = 1;
 let selectedIcon = undefined;
 
-initializeWindow("notes");
-initializeWindow("welcome");
-initializeWindow("terminal");
-initializeWindow("browser")
+["notes", "welcome", "terminal", "browser", "about"].forEach(initializeWindow);
+
 
 welcomeScreenOpen.addEventListener("click", () => {openWindow(welcomeScreen)})
 createFileButton.addEventListener("click", createFile);

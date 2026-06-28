@@ -41,6 +41,18 @@
         <p>Browser</p>
       </div>
 
+      <div class="app" id="aboutopen">
+        <img src="./about.png" class="icon" />
+        <p>About</p>
+      </div>
+
+<!-- Template icon
+      <div class="app" id="templateopen">
+        <img src="./template.png" class="icon" />
+        <p>Template</p>
+      </div>
+    -->
+
     </div>
 
     <!--Windows-->
@@ -85,6 +97,19 @@
       <div class="content">
         <input id="browserURL" placeholder="Enter URL here"><button type="button" onclick="getPage()">Go!</button>
         <iframe id="browserContent" src="about:blank" style="width: 800px;height: 450px;"></iframe>
+      </div>
+    </div>
+
+    <div id="about" class="window" style="top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;;">
+      <div id="aboutheader" class="windowheader">
+        <p class="closeButton" id="aboutclose"></p>
+        <p style="margin: 5px; font-family: 'Noto Sans';">About</p>
+      </div>
+      <div class="content">
+        <h1>About Cricket</h1>
+        <p>Cricket v1.2</p>
+        <p>Copyright Edmund 2026</p>
+        <a href="https://stardance.space/r-j3ek6" target="_blank" rel="noopener noreferrer" style="padding: 5px; background-color: #5d4e4e; border-radius: 6px; color: #fff; text-decoration: none;">Made For the Stardance Hackclub Challenge. Click Here!</a>
       </div>
     </div>
 
