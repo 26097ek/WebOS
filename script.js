@@ -239,7 +239,9 @@ function getResponse (command) {
         case "notes":
             openWindow(notesScreen);
             contentsField.focus();
-            return "Opening Notes app...";
+            return;
+        case "help":
+          return "help: Brings up this text.\necho: Echoes your text back.\nclear: Clears the terminal.\nnotes: Opens the Notes app."
         default:
             return `bash: ${command[0]}: command not found`;
     }
