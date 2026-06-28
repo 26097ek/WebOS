@@ -6,3 +6,6 @@ Cricket is a very basic web OS that can do basic functions. It currently has:
 + a terminal (doesn't do much at the moment)
 + a browser
 + and an about page.
+
+## Credits
+Flaticon for the cricket image
