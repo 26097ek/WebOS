@@ -1,13 +1,16 @@
-# 🦗Cricket v1.2
+# Cricket v1.2
+An operating system with lore.
 
-## ❔What is cricket?
+## What is cricket?
 Cricket is a very basic web OS that can do basic functions. It currently has:
 + a text editor (Notes)
 + a terminal (doesn't do much at the moment)
 + a browser
 + and an about page.
 
-## 🗒Notes
+![Welcome Screen](./READMEimages/Welcome.png)
+
+## Notes
 
 The Notes app should be pretty self explanitory, but I'll give you a quick rundown in case you can't understand it.
 
@@ -19,7 +22,9 @@ To name files, enter your file name in the input box at the top.
 
 To clear everything, simply click the "New File" button.
 
-## 🖥Terminal
+![Notes Window](./READMEimages/Notes.png)
+
+## Terminal
 
 Currently, when you type in a command, the input box disappears. I will have to fix that soon.
 
@@ -30,7 +35,9 @@ echo: Echoes your text back.\
 clear: Clears the terminal.\
 notes: Opens the Notes app.
 
-## 🌐Browser
+![Terminal Window](./READMEimages/Terminal.png)
+
+## Browser
 
 The Browser is pretty simple. Just enter the link, and see your website! (most of the time)
 
@@ -39,9 +46,13 @@ Some websites don't allow themselves to be put in iframes because of **clickjack
 Clickjacking is placing an invisible iframe of a legitamite website over your malicious website. When the user clicks a button that seems to be something, they actually click a button in the hidden iframe, for example, the "buy" button on amazon. This can lead to the user doing unintended things, such as paying money to the hacker.
 You can read more about clickjacking [here](https://en.wikipedia.org/wiki/Clickjacking).
 
-## 👤About
+![Browser Displaying Wikipedia](./READMEimages/Browser.webp)
+
+## About
 
 This just displays the system info.
+
+### [Try Here!](https://26097ek.github.io/WebOS/)
 
 ## Credits
 Flaticon for the cricket image
